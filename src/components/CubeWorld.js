@@ -25,7 +25,6 @@ import Overlay from './html/Overlay'
 import Hud from './html/Hud'
 import GameOverScreen from './html/GameOverScreen'
 
-
 export default function CubeWorld({ color, bgColor }) {
   const directionalLight = useStore((s) => s.directionalLight)
 
@@ -43,6 +42,7 @@ export default function CubeWorld({ color, bgColor }) {
           <ambientLight intensity={0.1} />
           <Ship>
             {directionalLight.current && <primitive object={directionalLight.current.target} />}
+
           </Ship>
           <Walls />
           <Cubes />

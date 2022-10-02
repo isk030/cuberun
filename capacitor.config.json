@@ -1,0 +1,9 @@
+{
+  "appId": "com.example.app",
+  "appName": "cubeworld",
+  "webDir": "build",
+  "bundledWebRuntime": false,
+  "ios": {
+      "scrollEnabled": false
+}
+}

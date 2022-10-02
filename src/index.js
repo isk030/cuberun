@@ -13,8 +13,10 @@ import CubeWorld from './components/CubeWorld';
 //   document.getElementById('root')
 // );
 
+document.addEventListener('gesturestart', (event) => { event.preventDefault(); }, false);
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <CubeWorld bgColor='#141622' />
+    <CubeWorld overflow-scroll="false" bgColor='#141622' />
   </React.StrictMode>
 )
